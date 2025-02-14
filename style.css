@@ -19,23 +19,26 @@ html{
     background-color: white;
     box-shadow: 5px 5px 5px gray;
 }
-.element{
+/* .element{
     margin:0px;
     padding: 0px;
-}
+} */
 .more{
-    position:absolute;
     padding-top:8px;
     padding-bottom: 8px;
     padding-left: 30px;
     padding-right: 30px;
-    left: 18vw;
-    top: 114vh;
     border: 0px;
     border-radius: 50px;
     background-color: #deecfc;
     font-family: 'Poppins', sans-serif;
     text-decoration-color: blue;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+.read_more {
+    display: flex;
+    align-items: center;
 }
 .more > p {
     margin:0px;
@@ -47,19 +50,22 @@ html{
 .image{
     height:50vh;
     width:44.5vw;
-    position:absolute;
+    /* position:absolute; */
     top:5px;
     left:7px;
     margin:3px;
     padding:3px;
     border-radius: 25px;
+    box-shadow: 5px 5px 8px red , 5px 5px 8px blue;
 }
 .tags{
     margin: 0px;
     padding: 0px;
-    position: absolute;
     top: 54vh;
     left:-2vw;
+}
+ul{
+    list-style-type: circle;
 }
 .list_item{
     margin:5px;
@@ -73,16 +79,34 @@ html{
     list-style: none;
     font-size: 15;
 }
+
+.list_item:hover{
+    background-color: #bd9c9c;
+    color: #ffffff;
+}
+.element > .more:hover{
+    background-color: #bd9c9c;
+    color:chocolate;
+}
+#text_container{
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .heading{
-    position: absolute;
-    top:58vh;
-    left:1.5vw;
-    padding-top:20px;
-    padding-bottom: 20px;
+    text-align: center;
+    max-width: 150px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 5px blue , 0 0 3px #FF0000;
 }
 .text{
-    position:absolute;
-    top:74vh;
-    left: 1.5vw;
-    right:1.5vw;
+    max-height: 250px;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    overflow: auto;
+    box-shadow: 5px 5px 5px lightblue;
 }
